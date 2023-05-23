@@ -32,7 +32,7 @@ This repository contained 3 training scripts to trained Deep Neural Network clas
 1. GNN_node_classifier.py which train a DrugGNN model as described in [2]. 
 2. GNN_molecule_classifier.py which train a DSE classifier base only on our neural figerprint.
 3. GNN_MinN_classifier.py which runs the dynamic learning approach proposed by Group 5. 
-3. GNN_MinN_classifier.py_original_training which train the full MolecularGNN model using the custom
+4. GNN_MinN_classifier.py_original_training which train the full MolecularGNN model using the custom
 fit function implemented by Group 5.
 
 All script can take an optionnal command line argument run_id to differentiate training from one another. All parameters related to leraning must be modify inside of the corresponding training script.
