@@ -20,7 +20,7 @@ to reset drug-drug connections - see `GNN_node_classifier.py`
 - Our group also added graphs for visualising training performance.
 
 
-The original algorithm by Pancino et al. (2022) was modified to have a custom fit function that replicated their original fit function. 
+We modified the original algorithm proposed by Pancino et al. (2022) to include a custom fit function that works the same as their fit function. 
 This is stored and can be run using `GNN_MinN_classifier_with_original_training.py`.
 Our proposed dynamic learning algorithm can be run using `GNN_MinN_classifier_with_dynamic_learning.py`
 
