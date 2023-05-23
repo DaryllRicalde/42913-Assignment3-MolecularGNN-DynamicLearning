@@ -11,15 +11,18 @@ similarity between neural fingerprints.
 We implemented our solution on top of the existing MolecularGNN repository. Our contributions are as follows:
 
 - A custom training function (called "custom_fit") that realizes the idea of dynamic learning
-located in `GNN_MinN_classifier.py`
-- An implementation of a normalised dot product which was used in calculating neural fingerprint
-similarity - see `GNN_node_classifier.py`
+located in `GNN_MinN_classifier_with_dynamic_learning.py`
 - Modified the `load_drugs()` function (see `GNN_node_classifier.py`) so that if it was called during training, the connections
 of the drug nodes would be based on whether the normalised dot product similarity of the neural fingerprints are more than
 a threshold value. The value used in our report was 0.98. 
 - An implementation of neural fingerprint similarity calculation that uses the similarity results
 to reset drug-drug connections - see `GNN_node_classifier.py`
 - Our group also added graphs for visualising training performance.
+
+
+The original algorithm by Pancino et al. (2022) was modified to have a custom fit function that replicated their original fit function. 
+This is stored and can be run using `GNN_MinN_classifier_with_original_training.py`.
+Our proposed dynamic learning algorithm can be run using `GNN_MinN_classifier_with_dynamic_learning.py`
 
 <hr>
 
